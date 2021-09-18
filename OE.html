@@ -1,0 +1,24 @@
+<html>
+    <head>
+        </head>
+        <body>
+            <input type="text" id="txtnumber" placeholder="Please enter some value"/>
+            <br> <br>
+            <input type="button" value="Check ODD EVEN" onclick="checkoddeven()"/>
+            <br> <br> <br>
+            <label id="lablemessage"></label>
+</body>
+    </html>
+    <script>
+        function checkoddeven()
+        {
+            var samplevalue=document.getElementById("txtnumber").value;
+        if (samplevalue% 2==0){
+            document.getElementById("lablemessage").innerHTML=samplevalue+ " is even";
+        }
+        else
+        document.getElementById("lablemessage").innerHTML=samplevalue+ " is odd";
+       
+            
+}
+    </script>
